@@ -13,6 +13,8 @@ gem 'bootstrap-sass'
 gem 'pg'
 gem 'simple_form'
 gem 'thin'
+gem 'rails_admin', '~> 0.6.5'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

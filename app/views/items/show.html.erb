@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @item.user_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @item.summary %>
+</p>
+
+<p>
+  <strong>Is public:</strong>
+  <%= @item.is_public %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @item.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @item.longitude %>
+</p>
+
+<p>
+  <strong>Fsq venue:</strong>
+  <%= @item.fsq_venue_id %>
+</p>
+
+<p>
+  <strong>Fsq venue name:</strong>
+  <%= @item.fsq_venue_name %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
