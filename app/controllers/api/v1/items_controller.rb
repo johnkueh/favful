@@ -26,7 +26,7 @@ module Api
       def update
         respond_to do |format|
           if @item.update(item_params)
-            format.json { head :no_content }
+            format.json { render json: @item }
           else
             format.json { render json: @item.errors, status: :unprocessable_entity }
           end

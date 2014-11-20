@@ -1,3 +1,3 @@
 json.array!(@comments) do |comment|
-  json.extract! comment, :id, :item_id, :user_id, :content, :updated_at, :created_at
+  json.extract! comment, :id, :item_id, :user, :content, :updated_at, :created_at
 end

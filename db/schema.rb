@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141115062749) do
+ActiveRecord::Schema.define(version: 20141120125444) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20141115062749) do
     t.boolean  "is_public"
     t.float    "latitude"
     t.float    "longitude"
-    t.integer  "fsq_venue_id"
+    t.string   "fsq_venue_id"
     t.string   "fsq_venue_name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 20141115062749) do
     t.string   "fb_access_token"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "fb_id"
   end
 
 end
